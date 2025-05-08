@@ -1,42 +1,31 @@
 import styled from 'styled-components'
 import { Cores } from '../../styles'
+import fundo from '../../assets/images/fundo.png'
 
-export const HeaderContainer = styled.header`
-  width: 100%;
+export const Container = styled.header`
+  background-image: url(${fundo});
   height: 186px;
-  background-size: auto;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  text-align: center;
-`
-export const Logo = styled.img`
-  width: 120px;
-  margin-bottom: 16px;
-  padding-top: 64px;
-`
-export const Title = styled.h1`
-  color: ${Cores.textColor};
-  font-size: 36px;
-  font-weight: bold;
-  line-height: 1.4;
-`
-export const BackButton = styled.a`
-  color: ${Cores.textColor};
-  font-weight: bold;
-  font-size: 18px;
-  text-decoration: none;
+  justify-content: space-between;
+  padding: 0 64px;
   position: relative;
-  display: flex;
-  right: 341px;
+
+  img {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
 `
-export const LinkCart = styled.a`
+
+export const Title = styled.span`
+  font-size: 18px;
   color: ${Cores.textColor};
   font-weight: bold;
+`
+
+export const Cart = styled.span`
   font-size: 18px;
-  text-decoration: none;
-  position: relative;
-  display: flex;
-  left: 341px;
+  color: ${Cores.textColor};
+  font-weight: bold;
 `

@@ -6,7 +6,8 @@ export const Cores = {
   backColor: '#FFF8F2',
   borderColor: '#E66767',
   TagColor: '#E66767',
-  textColor2: '#FFEBD9'
+  textColor2: '#FFEBD9',
+  CardColor: '#FFFFFF'
 }
 
 export const GlobalCss = createGlobalStyle`

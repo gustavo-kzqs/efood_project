@@ -3,10 +3,11 @@ import { Cores } from '../../styles'
 
 export const Grid = styled.div`
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 24px;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 32px;
   padding: 32px;
-  background-color: #fff6f0;
+  background-color: ${Cores.backColor};
+  justify-items: center;
 `
 
 export const Card = styled.div`
@@ -14,14 +15,11 @@ export const Card = styled.div`
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  text-align: left;
-  width: 320px;
-  padding: 16px;
+  padding: 24px;
+  box-sizing: border-box;
 `
 
 export const PizzaImage = styled.img`
-  width: 100%;
-  height: 150px;
   object-fit: cover;
 `
 
@@ -30,29 +28,28 @@ export const PizzaName = styled.h3`
   font-weight: 900;
   font-size: 18px;
   margin: 12px 0 8px;
-  color: white;
+  color: ${Cores.backColor};
 `
 
 export const PizzaDescription = styled.p`
   font-family: 'Roboto', sans-serif;
   font-size: 14px;
-  color: white;
+  color: ${Cores.backColor};
   padding: 0 12px;
   margin-bottom: 16px;
+  line-height: 22px;
+  text-align: left;
 `
 
 export const AddButton = styled.button`
-  background-color: #ffe5b4;
+  background-color: #ffebd9;
   color: #e66767;
   border: none;
   border-top: 1px solid #ffb3b3;
   padding: 8px 8px;
-  width: 100%;
   font-weight: bold;
   cursor: pointer;
   transition: background-color 0.3s;
-
-  &:hover {
-    background-color: #ffd699;
-  }
+  box-sizing: border-box;
+  font-size: 16px;
 `

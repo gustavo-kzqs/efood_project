@@ -13,7 +13,7 @@ export const HeaderContainer = styled.header`
 `
 export const Logo = styled.img`
   width: 120px;
-  margin-bottom: 16px;
+  margin-bottom: 120px;
   padding-top: 64px;
 `
 export const Title = styled.h1`

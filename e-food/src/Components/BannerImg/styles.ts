@@ -1,33 +1,40 @@
 import styled from 'styled-components'
-import { Cores } from '../../styles'
+import banner from '../../assets/images/massa.png'
 
-export const FundoImagem = styled.img`
-  width: 100%;
-  height: 280px;
-  background-image: url('./assets/image/massa.png');
-  object-fit: cover;
-  filter: brightness(0.5);
-`
-export const TextImg = styled.h1`
-  font-weight: lighter;
-  font-size: 32px;
-`
-export const BannerContainer = styled.div`
+export const Container = styled.div`
   position: relative;
   width: 100%;
   height: 280px;
-  overflow: hidden;
+  background-image: url(${banner});
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 24px;
+  box-sizing: border-box;
 `
-export const BannerContent = styled.div`
+
+export const Img = styled.div`
+  content: '';
   position: absolute;
-  text-align: left;
-  left: 180px;
-  bottom: 24px;
-  color: ${Cores.textColor2};
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.45);
+  z-index: 1;
 `
-export const Title = styled.h1`
+
+export const Categoria = styled.h3`
   font-size: 32px;
-  font-weight: bold;
-  right: 170px;
-  position: relative;
+  font-weight: 100;
+  color: #fff;
+  margin: 0;
+  z-index: 2;
+`
+
+export const Titulo = styled.h2`
+  font-size: 32px;
+  font-weight: 900;
+  color: #fff;
+  margin: 0;
+  z-index: 2;
 `

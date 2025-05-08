@@ -1,13 +1,13 @@
 import Footer from '../../Components/Footer'
 import Banner from '../../Components/Banner'
 import PizzaGrid from '../../Components/Pizzas'
-import BanImg from '../../Components/BannerImg'
+import BannerImg from '../../Components/BannerImg'
 
 const Restaurant = () => {
   return (
     <>
       <Banner />
-      <BanImg />
+      <BannerImg />
       <PizzaGrid />
       <Footer />
     </>

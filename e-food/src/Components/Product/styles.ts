@@ -6,11 +6,13 @@ export const CardContainer = styled.div`
   flex-wrap: wrap;
   justify-content: center;
   padding: 32px;
+  background-color: ${Cores.backColor};
 `
 
 export const Card = styled.div`
-  width: 400px;
-  background-color: ${Cores.backColor};
+  width: 472px;
+  height: 400px;
+  background-color: ${Cores.CardColor};
   border: 1px solid ${Cores.borderColor};
   overflow: hidden;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);

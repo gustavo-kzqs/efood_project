@@ -1,20 +1,13 @@
-import massa from '../../assets/images/massa.png'
-import {
-  BannerContainer,
-  BannerContent,
-  FundoImagem,
-  TextImg,
-  Title
-} from './styles'
+import { Container, Categoria, Titulo, Img } from './styles'
 
-const BanImg = () => (
-  <BannerContainer>
-    <FundoImagem src={massa} />
-    <BannerContent>
-      <TextImg>Italiana</TextImg>
-      <Title>La Dolce Trattoria</Title>
-    </BannerContent>
-  </BannerContainer>
-)
+const BannerImg = () => {
+  return (
+    <Container>
+      <Img />
+      <Categoria>Italiana</Categoria>
+      <Titulo>La Dolce Vita Trattoria</Titulo>
+    </Container>
+  )
+}
 
-export default BanImg
+export default BannerImg

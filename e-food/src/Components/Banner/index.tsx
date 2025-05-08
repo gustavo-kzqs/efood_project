@@ -1,17 +1,18 @@
 import logo from '../../assets/images/logo.png'
-import fundo from '../../assets/images/fundo.png'
-import { BackButton, HeaderContainer, LinkCart, Logo } from './styles'
+import { Cart, Container, Title } from './styles'
 import { Link } from 'react-router-dom'
 
-const Banner = () => (
-  <HeaderContainer style={{ backgroundImage: `url(${fundo})` }}>
-    <Logo src={logo} />
-    <Link to="/">
-      <BackButton>Restaurantes</BackButton>
-    </Link>
-    <LinkCart href="#">0 - produto(s) no carrinho</LinkCart>
-  </HeaderContainer>
-)
+const Banner = () => {
+  return (
+    <Container>
+      <Link to={'/'}>
+        <Title>Restaurantes</Title>
+      </Link>
+      <img src={logo} alt="efood logo" />
+      <Cart>0 produto(s) no carrinho</Cart>
+    </Container>
+  )
+}
 
 export default Banner
 
